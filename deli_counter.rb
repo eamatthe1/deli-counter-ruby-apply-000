@@ -1,5 +1,6 @@
 katz_deli = []
-
+$ticket_number = 0
+ 
 def line(katz_deli)
   if katz_deli.length == 0 
     puts "The line is currently empty."
@@ -14,10 +15,9 @@ def line(katz_deli)
   end
 end
 
-def take_a_number(katz_del)
-  if 
-  idx == 1 
-  katz_deli.push(idx)
+def take_a_number(katz_deli)
+  $ticket_number += 1
+  katz_deli.push($ticket_number)
   puts "Welcome, #{idx}. You are number #{katz_deli.length} in line."
 end
 
