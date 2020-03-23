@@ -5,13 +5,7 @@ def line(katz_deli)
   if katz_deli.length == 0 
     puts "The line is currently empty."
   else
-    kd_array = []
-    katz_deli.each_with_index do |ele, idx|
-      que_num = idx + 1
-      que_name = ele
-      kd_array.push("#{que_num}. #{que_name}")
-    end
-    puts "The line is currently: #{kd_array.join(" ")}"
+    puts "The line is currently: #{katz_deli.join(" ")}"
   end
 end
 
